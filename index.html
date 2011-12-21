@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta name="language" content="en-US" />
+  <title>Latitude - Engagements</title>
+  <meta name="description" lang="en" content="#" />
+  <meta name="keywords" lang="en" content="#" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/uniform.default.css" />
+
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.tools.min.js" type="text/javascript"></script>
+  <script src="js/jquery.uniform.min.js" type="text/javascript"></script>
+  <script src="js/engagements.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    // ------ TABS INIT ---------------------------------
+    $("ul.tabs").tabs("div.panes > div", {history: true});
+    // ------ TRANSFORM FORMS ---------------------------
+    $("input, select, button").uniform();
+  });
+  </script>
+
+</head>
+<body>
+  <div id="page">
+    <div id="header"> <!-- just sample container for your framework -->
+    </div>
+    <div id="left"> <!-- just sample container for your framework -->
+    </div>
+    <div id="content">
+      <h3>Search</h3>
+      <h1>Candidate Search</h1>
+      <h2>FINCENTRIC CORP - Sales Executive</h2>
+
+      <!-- tab navigation with ajax -->
+      <ul class="tabs">
+        <li><a href="industry.html">Industry/Organization</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="engagements.html">Engagements</a></li>
+        <li><a href="saved-searches.html">Saved Searches</a></li>
+      </ul>
+
+      <!-- tab "pane" -->
+      <form action="" name="search-form" id="search-form">
+      <div class="panes">
+        <div> <!-- industry/organization tab start -->
+          <fieldset>
+            <legend>Experience in these functional areas:</legend>
+            <div class="areas">
+              <!-- blank row markup to copy via js -->
+              <p class="markup">
+                <label for="practice">Practice</label>
+                <select name="practice" id="practice">
+                  <option value="du" disabled="disabled">Select a Practice ...</option>
+                  <option value="1">Information Officers</option>
+                  <option value="2">Fiat</option>
+                  <option value="3">Audi</option>
+                </select>
+                <label for="sector">Sector</label>
+                <select name="sector" disabled="disabled" id="sector">
+                  <option value="">Select a Sector ...</option>
+                </select>
+                <label for="functioncode">Functioncode</label>
+                <select name="functioncode" disabled="disabled" id="functioncode">
+                  <option value="">Select a Function Code ...</option>
+                </select>
+                <a href="#" class="delete" title="Delete this area">Delete</a>
+                <a href="#" class="add" title="Add new area">Add</a>
+              </p>
+            </div>
+            <div class="specifically">
+              <p>specifically, within:</p>
+              <ul class="radio-group-list"> <!-- required for tabs script to work, hidden -->
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+			  <div class="keywords"><p>Industry keywords<input type="text" name="keywords" id="keywords" /></p></div>
+              <div class="radio-group"> <!-- actual radio group, visible -->
+                <p class="selected"><input type="radio" name="specific-experience" value="1" id="specific-experience-1" checked="checked" /><label for="specific-experience-1">Targeted Companies</label></p>
+                <p><input type="radio" name="specific-experience" value="2" id="specific-experience-2" /><label for="specific-experience-2">NAICS Codes</label></p>
+                <!--p><input type="radio" name="specific-experience" value="3" id="specific-experience-3" /><label for="specific-experience-3"></label></p-->
+              </div>
+              <div class="specific-experience-panes"> <!-- panes with content for radio buttons -->
+                <div>
+                  <p><span>LMNP and Sons Company</span><input type="checkbox" name="hierarchy" id="hierarchy" /><label for="hierarchy">Include Hierarchy</label></p>
+                  <p><input type="text" name="specific-search" id="specific-search" /><label for="specific-search" class="hidden">Search</label><a href="#" class="glass">Search</a></p>
+                </div>
+                <div>2</div>
+                <div>3</div>
+              </div> <!-- end panes with content for radio buttons -->
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Worked at organizations that fit this profile:</legend>
+            <div class="worked-at">
+              <div class="left"> <!-- left container worked-at -->
+                <p class="small-forms">
+                  <label for="revenue">Annual Revenue (in millions)</label>
+                  <select name="revenue" id="revenue">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                  </select>
+                  <label for="revenue-from" class="hidden">from</label>
+                  <input type="text" name="revenue-from" id="revenue-from" />
+                  <label for="revenue-to" class="small">to</label>
+                  <input type="text" name="revenue-to" id="revenue-to" />
+                </p>
+                <p>
+                  <label for="ownership">Ownership Type</label>
+                  <select name="ownership" id="ownership">
+                    <option value="1">Any</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="employees">Number of Employees</label>
+                  <select name="employees" id="employees">
+                    <option value="1">Any</option>
+                  </select>
+                </p>
+              </div><!-- end left container worked-at -->
+              <div class="right"> <!-- right container worked-at -->
+                <p class="left">In these countries</p>
+                <p class="right">
+                  Wales, Ireland, United States<br />
+                  EMEA<br />
+                  <a href="#" title="select countries">select countries</a>
+                </p>
+                <p class="left">In these U.S. States</p>
+                <p class="right"><a href="#" title="select states">select states</a></p>
+              </div>  <!-- end right container worked-at -->
+            </div>
+          </fieldset>
+          <div class="hr"></div>
+          <div class="form-footer"><!-- send button, additional links -->
+            <a href="#" title="add personal information">add personal<br />information</a>
+            <p>
+              <input type="submit" value="Search" name="search" />
+              or
+            </p>
+          </div><!-- end footer -->
+        </div><!-- INDUSTRY/ORGANIZATION tab end -->
+        <div><!-- PERSONAL tab start -->
+          <fieldset>
+            <legend>Position Expectations:</legend>
+            <div class="left">
+              <p>
+                <label for="job-title">Job Title</label>
+                <input type="text" name="job-title" id="job-title" />
+              </p>
+              <p>
+                <label for="experience-type">Experience Type</label>
+                <select name="experience-type" id="experience-type">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+              <p class="small-forms">
+                <label for="base-salary">Base Salary</label>
+                <select name="base-salary" id="base-salary">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                </select>
+                <label for="salary-from" class="hidden">from</label>
+                <input type="text" name="salary-from" id="salary-from" />
+                <label for="salary-to" class="small">to</label>
+                <input type="text" name="salary-to" id="salary-to" />
+              </p>
+            </div>
+            <div class="right wide-labels left-labels">
+              <p>
+                <label for="experience-current" class="hidden">Current Experience</label>
+                <select name="experience-current" id="experience-current">
+                  <option value="1">Current work experience only</option>
+                </select>
+              </p>
+              <p><input type="checkbox" name="cv-available" id="cv-available" /><label for="cv-available">Resume/CV Available</label></p>
+              <p><input type="checkbox" name="interim" id="interim" /><label for="interim">Interested in Interim</label></p>
+              <p><input type="checkbox" name="non-exec" id="non-exec" /><label for="non-exec">Interested in Non-Exec</label></p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Worked at organizations that fit this profile:</legend>
+            <div class="left">
+              <div class="link-selects">
+                <p class="left">Job Title</p>
+                <p class="right">Canada, United States<br />
+                  <a href="#" title="select countries">select countries</a>
+                </p>
+                <p class="left">Experience Type</p>
+                <p class="right"><a href="#" title="select countries">select countries</a></p>
+                <p class="left">Base Salary</p>
+                <p class="right"><a href="#" title="select countries">select countries</a></p>
+              </div>
+            </div>
+            <div class="right wide-labels left-labels">
+              <p><input type="checkbox" name="relocate" id="relocate" /><label for="relocate">Willing to Relocate</label></p>
+              <p class="level-2"><input type="checkbox" name="international" id="international" /><label for="international">Open to International</label></p>
+              <p class="level-3"><a href="#">select preferred regions/countries</a></p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Education/Training:</legend>
+            <div class="left wide-labels">
+              <p>
+                <label for="personal-ownership">Ownership Type</label>
+                <select name="personal-ownership" id="personal-ownership">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+              <p>
+                <label for="personal-employees">Number of Employees</label>
+                <select name="personal-employees" id="personal-employees">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+            </div>
+          </fieldset>
+          <div class="hr"></div>
+          <div class="form-footer"><!-- send button, additional links -->
+            <a href="#" title="add personal information">add personal<br />information</a>
+            <p>
+              <input type="submit" value="Search" name="search" />
+              or
+            </p>
+          </div><!-- end footer -->
+        </div><!-- PERSONAL tab end -->
+        <div><!-- ENGAGEMENTS tab start -->
+          <fieldset>
+            <legend>Practice Areas:</legend>
+            <div class="left">
+              <p>
+                <label for="industry">Industry</label>
+                <select name="industry" id="industry">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+            </div>
+            <div class="right">
+              <p>
+                <label for="practice-area">Practice</label>
+                <select name="practice-area" id="practice-area">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Contact Result:</legend>
+            <div class="left">
+              <p>
+                <label for="contact-result">Result</label>
+                <select name="contact-result" id="contact-result">
+                  <option value="1">None</option>
+                </select>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Specific Engagements:</legend>
+            <div class="left">
+              <p class="level-3"><a href="#">add engagement</a></p>
+            </div>
+          </fieldset>
+          <div class="hr"></div>
+          <div class="form-footer">
+            <p>
+              <input type="submit" value="Search" name="search" />
+            </p>
+          </div>
+        </div><!-- ENGAGEMENTS tab end -->
+        <div class="saved"><!-- SAVED SEARCHES tab start -->
+          <fieldset>
+            <legend>Practice Areas:</legend>
+            <p>Selecting Search Criteria that you've previously saved will automatically rerun that search for you</p>
+            <div class="very-wide-labels">
+              <p>
+                <label for="last-5">Last 5 Saved Search Criteri</label>
+                <select name="last-5" id="last-5">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+              <p>
+                <label for="last-30">Search Criteria Saved in Last 30 Day</label>
+                <select name="last-30" id="last-30">
+                  <option value="1">Any</option>
+                </select>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Saved Search Lists</legend>
+            <p>View the list from a saved search results by looking up the previously saved list or clicking on a list you've recently viewed.</p>
+            <p>
+              <label for="saved-search" class="hidden">Saved search:</label>
+              <input type="text" name="saved-search" id="saved-search" />
+              <a href="#" class="glass">Search</a>
+            </p>
+            <p class="list-heading">Last 5 viewed lists</p>
+            <ul>
+              <li><a href="#">Lorem Ipsum dolor sit</a></li>
+              <li><a href="#">Lorem Ipsum dolor sit</a></li>
+              <li><a href="#">Lorem Ipsum dolor sit</a></li>
+              <li><a href="#">Lorem Ipsum dolor sit</a></li>
+              <li><a href="#">Lorem Ipsum dolor sit</a></li>
+            </ul>
+          </fieldset>
+          <div class="hr"></div>
+          <div class="form-footer">
+            <p>
+              <input type="submit" value="Search" name="search" />
+            </p>
+          </div>
+        </div><!-- SAVED SEARCHES tab end -->
+      </div></form>
+    </div> <!-- end #content -->
+  </div> <!-- end #page -->
+</body>
+</html>
