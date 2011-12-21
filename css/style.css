@@ -922,7 +922,7 @@ label.small {
 	text-indent: -9999px;
 	width: 25px;
 	height: 25px;
-	background: url('close.png') no-repeat;
+	background: url('../img/close.png') no-repeat;
 	float: right;
 	margin-top: -5px;
 }
@@ -953,7 +953,7 @@ label.small {
 	cursor: pointer;
 	overflow: hidden;
 	border: 1px solid #c3c1c0;
-	background: url('button.png') repeat-x #eceded;
+	background: url('../img/button.png') repeat-x #eceded;
 	color: #4b4a4a;
 	padding: 3px 10px 3px 10px;
 	-webkit-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
