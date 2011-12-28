@@ -72,32 +72,4 @@ $(document).ready(function(){
       $("#filters").hide();
     }
   });
-  
-  
-  
-  $("#HideShow").click(function(){
-    var $this = $(this);
-	var txt   = $this.html();
-	
-	if (txt == 'Hide') {
-		// hide
-		$("#filters").hide();
-		// set text to show
-		$this.html('Show');
-	} else {
-		// show
-		$("#filters").show();
-		// set text to hide
-		$this.html('Hide');
-	}
-	
-	// workaround for uniform plugin
-	if ($.uniform) {
-		var span = $this.parent('span')[0];
-		if (span && span.firstChild && span.firstChild.nodeType == 3) {
-			span.firstChild.nodeValue = txt == 'Hide' ? 'Show' : 'Hide';
-		}
-	}	
-
-  });
 });

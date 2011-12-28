@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Blank</title>
+  <style type="text/css">
+
+  .ui-dialog * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ui-dialog {
+    padding: 3px;
+    width: 575px;
+    margin: 0 auto;
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    color: #4b4a4a;
+  }
+
+  .ui-dialog-titlebar {
+    border-top: 2px solid #c0c0c1;
+    border-right: 2px solid #c0c0c1;
+    border-bottom: 1px solid #c0c0c1;
+    border-left: 2px solid #c0c0c1;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 10px;
+    font-weight: bold;
+  }
+
+  .ui-icon-closethick {
+    display: block;
+    text-indent: -9999px;
+    width: 25px;
+    height: 25px;
+    background: url('img/close.png') no-repeat;
+    float: right;
+    margin-top: -5px;
+  }
+
+  .ui-dialog-content {
+    border-right: 2px solid #c0c0c1;
+    border-bottom: 2px solid #c0c0c1;
+    border-left: 2px solid #c0c0c1;
+    padding: 17px;
+  }
+
+  .ui-dialog-content p {
+    margin-bottom: 10px;
+  }
+
+  .ui-dialog-content a {
+    text-decoration: underline;
+    coloe: #3c59a7;
+  }
+
+  #targeted_companies_search_string {
+    margin-right: 15px;
+  }
+
+  .ui-dialog .ui-button {
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #c3c1c0;
+    background: url('img/button.png') repeat-x #eceded;
+    color: #4b4a4a;
+    padding: 3px 10px 3px 10px;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
+    box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .ui-dialog span.hr {
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #c0c0c1;
+    margin: 20px auto 20px auto;
+  }
+
+  .ui-dialog p.heading {
+    font-weight: bold;
+    cell-spacing: 0px;
+    cell-padding: 0px;
+  }
+
+  .ui-dialog table {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  .ui-dialog table thead {
+    background: #d5d6d6;
+  }
+
+  .ui-dialog table th {
+    padding: 10px 5px 5px 5px;
+  }
+
+  .ui-dialog table tr.odd {
+    background: #edeeee;
+  }
+
+  .ui-dialog table td {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+
+  .ui-dialog .cancel {
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    font-size: 10px;
+    text-decoration: underline;
+    margin-left: 10px;
+    color: #3c59a7;
+  }
+
+  </style>
+  </head>
+  <body>
+
+  <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable">
+    <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+     <span id="ui-dialog-title-dialog" class="ui-dialog-title">Company lookup</span>
+     <a class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a>
+    </div>
+    <div style="min-height: 109px; width: auto;" class="ui-dialog-content ui-widget-content" id="dialog">
+     <p>Search for Company by entering all or part of the company name. The results will be displayed below.</p>
+     <p>
+      <input id="targeted_companies_search_string" size="12">
+      <button id="targeted_companies_search_button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Search</span></button>
+     </p>
+     <span class="hr"></span>
+     <p class="heading">Recently Viewed Companies</p>
+
+     <table id="dialog-table">
+        <thead>
+          <tr>  <!-- if you want you can add class for each col and set width for them -->
+            <th scope="col"><input type="checkbox" name="check" /></th>
+            <th scope="col">Company</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Country</th>
+            <th scope="col">Location Type</th>
+            <th scope="col">Owner</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="check" /></td>
+            <td>Abc Company Limited</td>
+            <td>Pittaburgh</td>
+            <td>Pennsylvania</td>
+            <td>United States</td>
+            <td>Corporate Headquarters</td>
+            <td>547JThom</td>
+          </tr>
+          <tr class="odd">
+            <td><input type="checkbox" name="check" /></td>
+            <td>Abc Company Limited</td>
+            <td>Pittaburgh</td>
+            <td>Pennsylvania</td>
+            <td>United States</td>
+            <td>Corporate Headquarters</td>
+            <td>547JThom</td>
+          </tr>
+        </tbody>
+
+    </table>
+
+     <p><button type="button" class="ok ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Add Companies</span></button><button type="button" class="cancel ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">cancel</span></button></p>
+    </div>
+  </div>
+
+  </body>
+</html>

@@ -184,7 +184,7 @@ fieldset > div.left label, fieldset > div.right label {
 	width: 150px;
 	text-align: right;
 	margin-right: 5px;
-	font-size: 16px;
+	font-size: 17px;
 }
 
 fieldset > div.left p, fieldset > div.right p {
@@ -304,8 +304,7 @@ div.specifically .radio-group p {
 
 div.specifically .radio-group p.selected {
 	color: #000;
-	font-weight:bold;
-	border: 0px solid #eaeaea;
+	border: 1px solid #eaeaea;
 }
 
 div.specifically .radio-group p .radio {
@@ -322,7 +321,7 @@ form .radio-group-list {
 }
 
 div.specific-experience-panes {
-	border: 0px solid #eaeaea;
+	border: 1px solid #eaeaea;
 	float: left;
 	overflow: hidden;
 }
@@ -360,13 +359,6 @@ div.specific-experience-panes > div a.glass {
 	cursor: pointer;
 	line-height: 150%;
 }
-div.keywords {
-	padding-top:20px;	padding-bottom:20px;	
-}
-#keywords {
-	width: 450px;
-	margin-left:20px;
-}
 
 /*--------------------------------------- */
 /*	WORKED-AT FORM
@@ -397,7 +389,7 @@ form .worked-at label {
 	width: 200px;
 	text-align: right;
 	margin-right: 5px;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 form .worked-at label.hidden {
@@ -416,7 +408,6 @@ form .worked-at p.small-forms div.selector {
 
 form .worked-at p.small-forms div.selector select {
 	width: 86px;
-
 }
 
 form .worked-at p.small-forms div.selector span {
@@ -425,7 +416,6 @@ form .worked-at p.small-forms div.selector span {
 
 form .worked-at p.small-forms .text {
 	width: 60px;
-	height: 14px;
 }
 
 form .worked-at div.right p.left {
@@ -823,7 +813,7 @@ a.glass {
 	float: left;
 	font-weight: bold;
 	margin-left: 22px;
-	font-size: 16px;
+	font-size: 15px;
 	-webkit-border-bottom-right-radius: 12px;
 	-webkit-border-bottom-left-radius: 12px;
 	-moz-border-radius-bottomright: 12px;
@@ -889,127 +879,4 @@ div.pagination ul li.current a {
 
 label.small {
 	*width: 30px !important;
-}
-
-.ui-dialog * {
-	margin: 0;
-	padding: 0;
-}
-
-.ui-dialog {
-	padding: 3px;
-	width: 575px;
-	margin: 0 auto;
-	background: #fff;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 11px;
-	color: #4b4a4a;
-}
-
-.ui-dialog-titlebar {
-	border-top: 2px solid #c0c0c1;
-	border-right: 2px solid #c0c0c1;
-	border-bottom: 1px solid #c0c0c1;
-	border-left: 2px solid #c0c0c1;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding: 12px 10px;
-	font-weight: bold;
-}
-
-.ui-icon-closethick {
-	display: block;
-	text-indent: -9999px;
-	width: 25px;
-	height: 25px;
-	background: url('../img/close.png') no-repeat;
-	float: right;
-	margin-top: -5px;
-}
-
-.ui-dialog-content {
-	border-right: 2px solid #c0c0c1;
-	border-bottom: 2px solid #c0c0c1;
-	border-left: 2px solid #c0c0c1;
-	padding: 17px;
-}
-
-.ui-dialog-content p {
-	margin-bottom: 10px;
-}
-
-.ui-dialog-content a {
-	text-decoration: underline;
-	coloe: #3c59a7;
-}
-
-#targeted_companies_search_string {
-	margin-right: 15px;
-}
-
-.ui-dialog .ui-button {
-	font-size: 11px;
-	font-weight: bold;
-	cursor: pointer;
-	overflow: hidden;
-	border: 1px solid #c3c1c0;
-	background: url('../img/button.png') repeat-x #eceded;
-	color: #4b4a4a;
-	padding: 3px 10px 3px 10px;
-	-webkit-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
-	-moz-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
-	box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-.ui-dialog span.hr {
-	display: block;
-	width: 90%;
-	height: 1px;
-	background: #c0c0c1;
-	margin: 20px auto 20px auto;
-}
-
-.ui-dialog p.heading {
-	font-weight: bold;
-	cell-spacing: 0px;
-	cell-padding: 0px;
-}
-
-.ui-dialog table {
-	width: 100%;
-	text-align: left;
-	overflow: hidden;
-	border-collapse: collapse;
-	margin-bottom: 30px;
-}
-
-.ui-dialog table thead {
-	background: #d5d6d6;
-}
-
-.ui-dialog table th {
-	padding: 10px 5px 5px 5px;
-}
-
-.ui-dialog table tr.odd {
-	background: #edeeee;
-}
-
-.ui-dialog table td {
-	padding: 10px 5px;
-	font-size: 10px;
-}
-
-.ui-dialog .cancel {
-	border: none;
-	background: none;
-	box-shadow: none;
-	border-radius: 0px;
-	font-size: 10px;
-	text-decoration: underline;
-	margin-left: 10px;
-	color: #3c59a7;
 }
