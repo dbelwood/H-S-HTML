@@ -73,8 +73,7 @@ $(document).ready(function(){
     }
   });
   
-  
-  
+
   $("#HideShow").click(function(){
     var $this = $(this);
 	var txt   = $this.html();
@@ -90,7 +89,6 @@ $(document).ready(function(){
 		// set text to hide
 		$this.html('Hide');
 	}
-	
 	// workaround for uniform plugin
 	if ($.uniform) {
 		var span = $this.parent('span')[0];
@@ -98,6 +96,19 @@ $(document).ready(function(){
 			span.firstChild.nodeValue = txt == 'Hide' ? 'Show' : 'Hide';
 		}
 	}	
+	});
+/*--------------------------------------- */
+/*  Comp Off Limits
+/*--------------------------------------- */	
+	$("#spanOn").hide();
+	$("#detailsOff").click(function(){
+		$("#spanOff").show();
+		$("#spanOn").hide();
+	});
+	$("#detailsOn").click(function(){
+		$("#spanOn").show();
+		$("#spanOff").hide();
+	});
 
-  });
+
 });
