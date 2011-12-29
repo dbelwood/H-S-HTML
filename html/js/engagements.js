@@ -100,15 +100,20 @@ $(document).ready(function(){
 /*--------------------------------------- */
 /*  Comp Off Limits
 /*--------------------------------------- */	
-	$("#spanOn").hide();
-	$("#detailsOff").click(function(){
-		$("#spanOff").show();
-		$("#spanOn").hide();
-	});
+
 	$("#detailsOn").click(function(){
 		$("#spanOn").show();
 		$("#spanOff").hide();
+		$("#stop1").css("height","330px");
+		$("#spanOn").css("height","300px");
+		$("#detailsOffdiv").show();
 	});
-
-
+	
+	$("#detailsOff").click(function(){
+		$("#spanOff").show();
+		$("#spanOn").hide();
+		$("#stop1").css("height","120px");
+		$("#detailsOffdiv").hide();
+	});	
+	
 });

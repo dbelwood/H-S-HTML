@@ -144,6 +144,7 @@ div.panes {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 16px 11px;
+	height:auto;
 }
 
 /*--------------------------------------- */
@@ -184,7 +185,7 @@ fieldset > div.left label, fieldset > div.right label {
 	width: 150px;
 	text-align: right;
 	margin-right: 5px;
-	font-size: 17px;
+	font-size: 16px;
 }
 
 fieldset > div.left p, fieldset > div.right p {
@@ -304,7 +305,8 @@ div.specifically .radio-group p {
 
 div.specifically .radio-group p.selected {
 	color: #000;
-	border: 1px solid #eaeaea;
+	font-weight:bold;
+	border: 0px solid #eaeaea;
 }
 
 div.specifically .radio-group p .radio {
@@ -321,7 +323,7 @@ form .radio-group-list {
 }
 
 div.specific-experience-panes {
-	border: 1px solid #eaeaea;
+	border: 0px solid #eaeaea;
 	float: left;
 	overflow: hidden;
 }
@@ -359,6 +361,13 @@ div.specific-experience-panes > div a.glass {
 	cursor: pointer;
 	line-height: 150%;
 }
+div.keywords {
+	padding-top:20px;	padding-bottom:20px;	
+}
+#keywords {
+	width: 450px;
+	margin-left:20px;
+}
 
 /*--------------------------------------- */
 /*	WORKED-AT FORM
@@ -389,7 +398,7 @@ form .worked-at label {
 	width: 200px;
 	text-align: right;
 	margin-right: 5px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 form .worked-at label.hidden {
@@ -408,6 +417,7 @@ form .worked-at p.small-forms div.selector {
 
 form .worked-at p.small-forms div.selector select {
 	width: 86px;
+
 }
 
 form .worked-at p.small-forms div.selector span {
@@ -416,6 +426,7 @@ form .worked-at p.small-forms div.selector span {
 
 form .worked-at p.small-forms .text {
 	width: 60px;
+	height: 14px;
 }
 
 form .worked-at div.right p.left {
@@ -813,7 +824,7 @@ a.glass {
 	float: left;
 	font-weight: bold;
 	margin-left: 22px;
-	font-size: 15px;
+	font-size: 16px;
 	-webkit-border-bottom-right-radius: 12px;
 	-webkit-border-bottom-left-radius: 12px;
 	-moz-border-radius-bottomright: 12px;
@@ -1020,7 +1031,10 @@ label.small {
 	float: left;
 	vertical-align: bottom;
 }
+#stop1 { height: 120px; }
+#stop2 { height: 50px; }
 #spanOn{
+	display: none;
 	width:850px;
 	position: relative;
 	float: left;
@@ -1028,6 +1042,7 @@ label.small {
 	/*margin-left: 21px;*/
 	padding-left: 15px;	padding-top: 15px;	padding-right: 15px;	padding-bottom: 0px;
 	clear: left;
+	overflow-y: auto;
 }
 #spanOff{
 	width:850px;
@@ -1037,6 +1052,15 @@ label.small {
 	/*margin-left: 21px;*/
 	padding-left: 15px;	padding-top: 0px;	padding-right: 15px;	padding-bottom: 15px;
 	clear: left;
+}
+#detailsOff {
+	position: absolute; top:385px; left:450px;
+	cursor: pointer;
+	z-index: 10;
+}
+#detailsOffdiv { 	display: none;	}
+#detailsOn{
+	cursor: pointer;
 }
 .lineIdent {
 	font-weight: bold;
