@@ -1048,11 +1048,11 @@ label.small {
 	padding-left: 15px;	padding-top: 0px;	padding-right: 15px;	padding-bottom: 15px;
 	clear: left;
 }
-.span1 {
+.lineIdent {
 	font-weight: bold;
 	line-height: 25px;
 }
-.span2 {
+.lineNext {
 	font-weight: bold;
 	line-height: 25px;
 }
