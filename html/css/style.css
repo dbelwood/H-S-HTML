@@ -1,0 +1,1072 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------- */
+/*	PAGE CSS
+/*--------------------------------------- */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+a {
+	color: #0433ff;
+	text-decoration: underline;
+}
+
+#page {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 1280px;
+	height: 117px;
+	position: relative;
+	background: url('../img/header.png') no-repeat;
+	margin-bottom: 17px;
+}
+
+#left {
+	width: 230px;
+	height: 814px;
+	background: url('../img/left.png') no-repeat -1px 0;
+	position: relative;
+	float: left;
+}
+
+#content {
+	width: 1010px;
+	position: relative;
+	float: left;
+	margin-left: 21px;
+}
+
+/*--------------------------------------- */
+/*	HEADINGS
+/*--------------------------------------- */
+h1 {
+	font-size: 34px;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+/*--------------------------------------- */
+/*	TABS
+/*--------------------------------------- */
+ul.tabs {
+	padding-top: 40px;
+}
+
+ul.tabs li {
+	float: left;
+	margin-left: 10px;
+}
+
+ul.tabs li a {
+	display: block;
+	background: #cee8f0;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+	height: 26px;
+	width: 190px;
+	padding-top: 10px;
+	text-align: center;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+ul.tabs li a.current {
+	color: #fff;
+	background: url('../img/tabs-li.png') repeat-x;
+}
+
+/*--------------------------------------- */
+/*	TAB PANE
+/*--------------------------------------- */
+div.panes {
+	border: 1px solid #51b1cf;
+	clear: both;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 16px 11px;
+}
+
+/*--------------------------------------- */
+/*	FORM STYLES
+/*--------------------------------------- */
+fieldset {
+	background: url('../img/fieldset.gif') repeat-x top;
+	padding: 29px 0 30px 0;
+	position: relative;
+}
+
+legend {
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+label.hidden {
+	display: none;
+}
+
+/* Firefox hack for positioning legend */
+@-moz-document url-prefix() {
+    legend {
+        top: -12px;
+    }
+}
+
+fieldset > div.left {
+	float: left;
+	width: 530px;
+	overflow: hidden;
+}
+
+fieldset > div.left label, fieldset > div.right label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	margin-right: 5px;
+	font-size: 17px;
+}
+
+fieldset > div.left p, fieldset > div.right p {
+	padding: 10px 0;
+}
+
+fieldset > div.left p.small-forms div.selector {
+	width: 80px;
+	margin-right: 6px;
+}
+
+fieldset > div.left p.small-forms div.selector select {
+	width: 86px;
+}
+
+fieldset > div.left p.small-forms div.selector span {
+	width: 58px;
+}
+
+fieldset > div.left p.small-forms .text {
+	width: 60px;
+}
+
+fieldset > div.left label.small {
+	width: auto;
+	display: inline;
+}
+
+fieldset > div.left label.hidden, fieldset > div.right label.hidden {
+	display: none;
+}
+
+fieldset > div.right {
+	float: left;
+	overflow: hidden;
+	width: 400px;
+}
+
+fieldset > div.right label {
+	width: 80px;
+}
+
+fieldset > div.wide-labels label {
+	width: 200px !important;
+}
+
+fieldset > div.very-wide-labels label {
+	width: 290px !important;
+}
+
+fieldset > div.left-labels label {
+	text-align: left !important;
+	line-height: 60%;
+}
+
+fieldset > div.left-labels p {
+	padding: 15px 0 0 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/*--------------------------------------- */
+/*	EXPERIENCE AREAS
+/*--------------------------------------- */
+div.areas {
+	padding: 10px 0 30px 0;
+}
+
+div.areas div.selector {
+	margin-right: 7px;
+}
+
+div.areas p.markup {
+	display: none;
+}
+
+div.areas p {
+	padding: 22px 0 0px 31px;
+}
+
+div.areas label {
+	display: none;
+}
+
+form a.add, a.delete {
+	display: inline-block;
+	height: 21px;
+	width: 20px;
+	text-indent: -9999px;
+	background: url('../img/form-buttons.gif') no-repeat 0 0;
+	margin: -2px 0 0 9px;
+}
+
+form a.add {
+	background-position: 0 -21px;
+}
+
+/*--------------------------------------- */
+/*	SPECIFIC EXPERIENCE AREAS
+/*--------------------------------------- */
+div.specifically {
+	padding-left: 34px;
+}
+
+div.specifically .radio-group {
+	width: 260px;
+	float: left;
+}
+
+div.specifically .radio-group p {
+	margin: 14px 0 0 8px;
+	overflow: hidden;
+	color: #797979;
+}
+
+div.specifically .radio-group p.selected {
+	color: #000;
+	border: 1px solid #eaeaea;
+}
+
+div.specifically .radio-group p .radio {
+	float: left;
+}
+
+div.specifically .radio-group p label {
+	padding: 1px 0 0 12px;
+	float: left;
+}
+
+form .radio-group-list {
+	display: none;
+}
+
+div.specific-experience-panes {
+	border: 1px solid #eaeaea;
+	float: left;
+	overflow: hidden;
+}
+
+div.specific-experience-panes > div {
+	width: 640px;
+	min-height: 110px;
+}
+
+div.specific-experience-panes > div p {
+	padding: 15px 0 0 0;
+}
+
+div.specific-experience-panes > div p span {
+	text-decoration: underline;
+	margin-right: 55px;
+}
+
+div.specific-experience-panes > div p .checker {
+	margin-top: -5px;
+	margin-right: 10px;
+}
+
+div.specific-experience-panes > div .text {
+	width: 166px;
+	
+}
+
+div.specific-experience-panes > div a.glass {
+	display: inline-block;
+	width: 31px;
+	height: 30px;
+	background: url('../img/glass.png') no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+	line-height: 150%;
+}
+
+/*--------------------------------------- */
+/*	WORKED-AT FORM
+/*--------------------------------------- */
+form .worked-at {
+	padding: 25px 0 0 0;
+}
+
+form .worked-at div.left {
+	float: left;
+	overflow: hidden;
+	width: 570px;
+}
+
+form .worked-at div.right {
+	float: left;
+	overflow: hidden;
+	width: 370px;
+}
+
+
+form .worked-at p {
+	padding: 0 0 20px 0;
+}
+
+form .worked-at label {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+form .worked-at label.hidden {
+	display: none;
+} 
+
+form .worked-at label.small {
+	display: inline;
+	margin: 0 5px;
+}
+
+form .worked-at p.small-forms div.selector {
+	width: 80px;
+	margin-right: 6px;
+}
+
+form .worked-at p.small-forms div.selector select {
+	width: 86px;
+}
+
+form .worked-at p.small-forms div.selector span {
+	width: 58px;
+}
+
+form .worked-at p.small-forms .text {
+	width: 60px;
+}
+
+form .worked-at div.right p.left {
+	float: left;
+	width: 150px;
+	text-align: right;
+	clear: both;
+	padding-top: 20px;
+}
+
+form .worked-at div.right p.right {
+	float: right;
+	width: 200px;
+	text-align: left;
+	padding-top: 20px;
+}
+
+/*--------------------------------------- */
+/*	PERSONAL FORM
+/*--------------------------------------- */
+form .link-selects {
+	padding-top: 10px;
+}
+
+form .link-selects p.left {
+	float: left;
+	width: 150px;
+	text-align: right;
+	clear: both;
+}
+
+form .link-selects p.right {
+	float: left;
+	width: 200px;
+	text-align: left;
+	margin-left: 10px;
+}
+
+form p.level-2 {
+	padding-left: 30px !important;
+}
+
+form p.level-3 {
+	padding-left: 60px !important;
+}
+
+/*--------------------------------------- */
+/*	SAVED SEARCHES
+/*--------------------------------------- */
+form .very-wide-labels label {
+	width: 280px !important;
+	text-align: right;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.saved p {
+	padding: 10px 15px;
+}
+
+.saved p.list-heading {
+	float: left;
+	padding-left: 30px;
+	padding-top: 15px;
+}
+
+.saved ul {
+	display: block;
+	float: left;
+}
+
+.saved ul li {
+	margin: 15px 0;
+}
+
+
+/*--------------------------------------- */
+/*	FORM FOOTER
+/*--------------------------------------- */
+form .hr {
+	clear: both;
+	width: 810px;
+	margin: 0 auto;
+	height: 1px;
+	background: #000;
+}
+
+form .form-footer {
+	overflow: hidden;
+}
+
+form .form-footer p {
+	text-align: right;
+	padding: 23px 0 23px 0;
+	float: right;
+}
+
+form .form-footer p .button {
+	margin-right: 10px;
+}
+
+form .form-footer a {
+	float: right;
+	padding: 23px 50px 23px 0px;
+	margin-left: 17px;
+}
+
+/*--------------------------------------- */
+/*	SEARCH RESULTS FILTERS
+/*--------------------------------------- */
+#filters {
+	display: none;
+}
+
+#filters .add {
+	float: right;
+	margin-right: 20px;
+}
+
+p.big {
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+p.big .selector {
+	font-weight: normal;
+}
+
+p.heading {
+	font-weight: bold;
+	margin: 14px 0;
+}
+
+.medium-selects  .selector {
+	width: 200px;
+	margin-right: 6px;
+}
+
+.medium-selects  .selector select {
+	width: 206px;
+}
+
+.medium-selects  .selector span {
+	width: 175px;
+}
+
+div.choose-filters {
+	padding-bottom: 17px;
+	border-bottom: 1px solid #adadad;
+}
+
+div.applied-filters {
+	padding-top: 15px;
+	border-top: 1px solid #e4e4e4;
+}
+
+p.empty {
+	font-size: 12px;
+	font-style: italic;
+}
+
+a.glass {
+	display: inline-block;
+	width: 31px;
+	height: 30px;
+	background: url('../img/glass.png') no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+	line-height: 150%;
+}
+
+#filters .choose-filters .add {
+	margin-top: 6px;
+}
+
+.choose-filters .medium-selects .text {
+	width: 130px;
+}
+
+.choose-filters .medium-selects .selector {
+	width: 165px;
+	margin-right: 6px;
+}
+
+.choose-filters .medium-selects .selector select {
+	width: 170px;
+}
+
+.choose-filters .medium-selects .selector span {
+	width: 150px;
+}
+
+/*--------------------------------------- */
+/*	SEARCH RESULTS FILTERS - APPLIED
+/*--------------------------------------- */
+#filters .applied-filters {
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+#filters .filter-row {
+	padding: 10px 10px;
+	clear: both;
+	float: left;
+}
+
+#filters .filter-row .delete, #filters .filter-row .add  {
+	float: left;
+}
+
+#filters .filter-row .text {
+	width: 130px;
+	margin: -6px 0 0 -2px;
+}
+
+#filters .filter-row .selector {
+	margin: -4px 0 0 -4px;
+}
+
+#filters .filter-row > div {
+	float: left;
+	margin-left: 20px;
+}
+
+#filters .col1 { width: 255px; }
+#filters .col2 { width: 144px; }
+#filters .col3 { width: 240px; }
+#filters .col4 { width: 158px; }
+
+/*--------------------------------------- */
+/*	SEARCH RESULTS
+/*--------------------------------------- */
+.res #left {
+	width: 26px;
+}
+
+.res #content {
+	width: 1210px;
+}
+
+#results {
+	background: #f2f2f2 url('../img/fieldset.gif') repeat-x top;
+	padding: 13px 9px;
+	margin-top: 19px;
+	overflow: hidden;
+}
+
+#results h2 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+#results ul.heading {
+	overflow: hidden;
+	font-size: 14px;
+}
+
+#results ul.heading li {
+	float: left;
+}
+
+#results ul.heading li p, #results ul.heading li a {
+	line-height: 185%;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+#results ul.heading li.right {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.small-select .selector {
+	width: 100px;
+	margin-right: 6px;
+}
+
+.small-select .selector select {
+	width: 106px;
+}
+
+.small-select .selector span {
+	width: 78px;
+}
+
+/*--------------------------------------- */
+/*	TABLE RESULTS
+/*--------------------------------------- */
+#table-results {
+	width: 100%;
+	background: #fff;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.table-border {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	border: 1px solid #1797c0;
+	margin-top: 10px;
+	position: relative;
+	background: #fff;
+}
+
+#table-results thead tr th {
+	background: url('../img/thead.gif') repeat-x;
+	font-size: 14px;
+	font-weight: bold;
+	height: 39px;
+	padding-bottom: 10px;
+	position: relative;
+	vertical-align: bottom;
+	border-left: 1px solid #d4dee3;
+	border-right: 1px solid #b7babc;
+	text-align: left;
+	padding-left: 5px;
+}
+
+#table-results thead tr th.col1 {
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-left: none;
+	height: 33px;
+	padding: 0 0 16px 14px;
+}
+
+#table-results thead tr th.col10 {
+	-webkit-border-top-right-radius: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+	-moz-border-radius-topright: 12px;
+	-moz-border-radius-bottomright: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-right: none;
+}
+
+/* width will align proportinatelly */
+#table-results .col1 { width: 20px; }
+#table-results .col2 { width: 157px; }
+#table-results .col3 { width: 230px; }
+#table-results .col4 { width: 145px; }
+#table-results .col5 { width: 95px; }
+#table-results .col6 { width: 126px; }
+#table-results .col7 { width: 118px; }
+#table-results .col8 { width: 102px; }
+#table-results .col9 { width: 90px; }
+#table-results .col10 { width: 87px; }
+
+#table-results .col1.cell {
+	padding-top: 14px;
+	padding-left: 14px;
+}
+
+#table-results .cell {
+	padding: 10px 7px 35px 7px;
+	font-size: 16px;
+	vertical-align: top;
+	text-align: left;
+	line-height: 120%;
+}
+
+#table-results .row {
+	border-bottom: 2px solid #d4d4d4;
+}
+
+#table-results .col2 p {
+	font-weight: bold;
+}
+
+#table-results .row.red {
+	background: #f5d6d6;
+}
+
+#table-results .red .col2 p {
+	color: #cc3333;
+	font-weight: normal;
+}
+
+.bottom-button {
+	display: block;
+	background: #cee8f0;
+	color: #000;
+	text-decoration: none;
+	padding: 10px 20px;
+	float: left;
+	font-weight: bold;
+	margin-left: 22px;
+	font-size: 15px;
+	-webkit-border-bottom-right-radius: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+/*--------------------------------------- */
+/*	PAGINATION
+/*--------------------------------------- */
+div.pagination {
+	float: right;
+	overflow: hidden;
+	margin: 10px 75px 0 0;
+}
+
+div.pagination .prev, div.pagination .next {
+	float: left;
+	display: block;
+	width: 11px;
+	height: 20px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+div.pagination .prev {
+	background: url('../img/prev.gif') no-repeat;
+	margin-right: 12px;
+}
+
+div.pagination .next {
+	background: url('../img/next.gif') no-repeat;
+}
+
+div.pagination ul {
+	float: left;
+}
+
+div.pagination ul li {
+	float: left;
+	font-size: 14px;
+	margin-right: 12px;
+	color: #3366ff;
+	margin-top: 3px;
+}
+
+div.pagination ul li a {
+	text-decoration: none;
+	color: #3366ff;
+}
+
+div.pagination ul li.current a {
+	color: #000;
+	cursor: default;
+}
+
+
+/* IE 7 hack */
+.radio-group label {
+	*line-height: 120% !important;
+}
+
+label.small {
+	*width: 30px !important;
+}
+
+.ui-dialog * {
+	margin: 0;
+	padding: 0;
+}
+
+.ui-dialog {
+	padding: 3px;
+	width: 575px;
+	margin: 0 auto;
+	background: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #4b4a4a;
+}
+
+.ui-dialog-titlebar {
+	border-top: 2px solid #c0c0c1;
+	border-right: 2px solid #c0c0c1;
+	border-bottom: 1px solid #c0c0c1;
+	border-left: 2px solid #c0c0c1;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 12px 10px;
+	font-weight: bold;
+}
+
+.ui-icon-closethick {
+	display: block;
+	text-indent: -9999px;
+	width: 25px;
+	height: 25px;
+	background: url('../img/close.png') no-repeat;
+	float: right;
+	margin-top: -5px;
+}
+
+.ui-dialog-content {
+	border-right: 2px solid #c0c0c1;
+	border-bottom: 2px solid #c0c0c1;
+	border-left: 2px solid #c0c0c1;
+	padding: 17px;
+}
+
+.ui-dialog-content p {
+	margin-bottom: 10px;
+}
+
+.ui-dialog-content a {
+	text-decoration: underline;
+	coloe: #3c59a7;
+}
+
+#targeted_companies_search_string {
+	margin-right: 15px;
+}
+
+.ui-dialog .ui-button {
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	overflow: hidden;
+	border: 1px solid #c3c1c0;
+	background: url('../img/button.png') repeat-x #eceded;
+	color: #4b4a4a;
+	padding: 3px 10px 3px 10px;
+	-webkit-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
+	-moz-box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
+	box-shadow: 0px 1px 2px 1px rgba(100, 100, 100, 0.5);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.ui-dialog span.hr {
+	display: block;
+	width: 90%;
+	height: 1px;
+	background: #c0c0c1;
+	margin: 20px auto 20px auto;
+}
+
+.ui-dialog p.heading {
+	font-weight: bold;
+	cell-spacing: 0px;
+	cell-padding: 0px;
+}
+
+.ui-dialog table {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+.ui-dialog table thead {
+	background: #d5d6d6;
+}
+
+.ui-dialog table th {
+	padding: 10px 5px 5px 5px;
+}
+
+.ui-dialog table tr.odd {
+	background: #edeeee;
+}
+
+.ui-dialog table td {
+	padding: 10px 5px;
+	font-size: 10px;
+}
+
+.ui-dialog .cancel {
+	border: none;
+	background: none;
+	box-shadow: none;
+	border-radius: 0px;
+	font-size: 10px;
+	text-decoration: underline;
+	margin-left: 10px;
+	color: #3c59a7;
+}
+/*--------------------------------------- */
+/*	Comp_OffLimits
+/*--------------------------------------- */
+.stop {
+	width:30px;
+	position: static;
+	float: left;
+	/*margin-left: 21px;*/
+	padding-left: 15px;	padding-top: 20px;	padding-right: 20px;	padding-bottom: 15px;
+
+}
+.stopText {
+	width:900px;
+	position: static;
+	float: left;
+	vertical-align: bottom;
+}
+#spanOn{
+	width:850px;
+	position: relative;
+	float: left;
+	border-left: 2px solid #999999;	border-top: 2px solid #999999;	border-right: 2px solid #999999;	border-bottom: 4px solid #B0B057;
+	/*margin-left: 21px;*/
+	padding-left: 15px;	padding-top: 15px;	padding-right: 15px;	padding-bottom: 0px;
+	clear: left;
+}
+#spanOff{
+	width:850px;
+	position: relative;
+	float: left;
+	border-left: 2px solid #999999;	border-bottom: 2px solid #999999;	border-right: 2px solid #999999;	border-top: 4px solid #B0B057;
+	/*margin-left: 21px;*/
+	padding-left: 15px;	padding-top: 0px;	padding-right: 15px;	padding-bottom: 15px;
+	clear: left;
+}
+.lineIdent {
+	font-weight: bold;
+	line-height: 25px;
+}
+.lineNext {
+	font-weight: bold;
+	line-height: 25px;
+}
+.span3 {
+	padding-left: 20px;
+	line-height: 25px;
+	font-weight: normal;
+}
+.clearfix:after {
+ content: ".";
+ display: block;
+ clear: both;
+ visibility: hidden;
+ line-height: 0;
+ height: 0;
+}
+.clearfix {
+ display: inline-block;
+}
+html[xmlns] .clearfix {
+ display: block;
+}
+ 
+* html .clearfix {
+ height: 1%;
+}
+
