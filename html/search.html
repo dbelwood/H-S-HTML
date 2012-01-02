@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta name="language" content="en-US" />
+  <title>Latitude - Engagements</title>
+  <meta name="description" lang="en" content="#" />
+  <meta name="keywords" lang="en" content="#" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/uniform.default.css" />
+
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.tools.min.js" type="text/javascript"></script>
+  <script src="js/jquery.uniform.min.js" type="text/javascript"></script>
+  <script src="js/engagements.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    // ------ TRANSFORM FORMS ---------------------------
+    $("input, select, button").uniform();
+  });
+  </script>
+
+</head>
+<body>
+  <div id="page" class="res">
+    <div id="header"> <!-- just sample container for your framework -->
+    </div>
+    <div id="left"> <!-- just sample container for your framework -->
+    </div>
+    <div id="content">
+      <h3>Search</h3>
+      <h1>Candidate Search</h1>
+      <h2>FINCENTRIC CORP - Sales Executive</h2>
+
+
+      <p class="big small-select">Set Filters:
+        <select name="show" id="show">
+          <option value="hide">HIDE</option>
+          <option value="show">SHOW</option>
+        </select>
+      </p>
+      <form id="filters" name="filters" action=""> <!-- FORM FILTERS start -->
+        <p class="heading">Add filters by first selecting a category, subcategory and filter. Click the add (+) button to add your Filters.</p>
+
+        <div class="choose-filters">
+          <p class="medium-selects">
+
+            <label for="category" class="hidden">Select a Category</label>
+            <select name="category" id="category">
+              <option value="">Select a Category ...</option>
+            </select>
+
+            <label for="sub-category" class="hidden">Select a Subcategory ...</label>
+            <select name="sub-category" id="sub-category" disabled="disabled">
+              <option value="">Select a Subcategory ...</option>
+            </select>
+
+            <label for="s-filter" class="hidden">Select a Filter ...</label>
+            <select name="s-filter" id="s-filter" disabled="disabled">
+              <option value="">Select a Filter ...</option>
+            </select>
+
+            <a href="#" class="add">add</a>
+          </p>
+        </div>
+
+        <div class="applied-filters">
+          <p class="empty">no filters have been added</p>
+        </div>
+
+        <p><input type="submit" value="Apply Filters" disabled="disabled" /></p>
+      </form> <!-- FORM FILTERS end -->
+
+      <div id="results"> <!-- SEARCH RESULTS start -->
+        <ul class="heading">
+          <li><h2>Search Results</h2></li>
+          <li><p>showing 1-25 of 144 results</p></li>
+          <li><a href="#">new search</a></li>
+          <li><a href="#">edit search</a></li>
+          <li class="right small-select">
+            <label for="save" class="hidden">Save</label>
+            <select name="save" id="save">
+              <option value="0">SAVE</option>
+            </select>
+          </li>
+          <li class="right">
+            <label for="sort-by" class="hidden">Sort by</label>
+            <select name="sort-by" id="sort-by">
+              <option value="0">SORT BY</option>
+            </select>
+          </li>
+        </ul>
+
+        <!-- Table with results markup-->
+        <div class="table-border">
+        <table id="table-results">
+
+          <!-- Table header -->
+
+            <thead>
+              <tr>
+                <th scope="col" class="col1"><input type="checkbox" name="head-box" id="head-box" /><label for="head-box" class="hidden">check</label></th>
+                <th scope="col" class="col2">Name</th>
+                <th scope="col" class="col3">Title</th>
+                <th scope="col" class="col4">Company</th>
+                <th scope="col" class="col5">Start/End Date</th>
+                <th scope="col" class="col6">City/State Country</th>
+                <th scope="col" class="col7">Current Compensation</th>
+                <th scope="col" class="col8">Connection Strength</th>
+                <th scope="col" class="col9">Known By Records</th>
+                <th scope="col" class="col10">Resume</th>
+              </tr>
+            </thead>
+
+          <!-- Table body -->
+
+            <tbody>
+
+              <!-- NEXT ROW xxxxxxxxxxxx -->
+              <tr class="row vcard">
+                <td class="col1 cell"><input type="checkbox" name="check-1" id="check-1" /><label for="check-1" class="hidden">check</label></td>
+                <td class="col2 cell">
+                  <a href="#" class="url fn">Chatterjee, Debashish</a>
+                </td>
+                <td class="col3 cell">
+                  <span class="role">Director, Human Resources,
+                    Automation and Control Systems</span>,
+                  <span class="adr"><span class="region">South East Asia</span>,
+                  <span class="country-name">Singapur</span></span>
+                </td>
+                <td class="col4 cell">
+                  <a href="#" class="url org">Abbott Laboratories (Singapore) Pte Ltd</a>
+                </td>
+                <td class="col5 cell">
+                  01/01/2010<br />unknown
+                </td>
+                <td class="col6 cell">
+                  <span class="adr"><span class="country-name">Singapore</span></span>
+                </td>
+                <td class="col7 cell">$500,000</td>
+                <td class="col8 cell"><a href="#">51</a></td>
+                <td class="col9 cell">3</td>
+                <td class="col10 cell"><a href="#" class="url">view</a></td>
+              </tr>
+
+
+              <!-- NEXT ROW xxxxxxxxxxxx -->
+              <tr class="row vcard">
+                <td class="col1 cell"><input type="checkbox" name="check-2" id="check-2" /><label for="check-2" class="hidden">check</label></td>
+                <td class="col2 cell">
+                  <a href="#" class="url fn">Doe, John</a>
+                  <p>CONTACT PROTOCOL</p>
+                </td>
+                <td class="col3 cell">
+                  <span class="role">Chief Executive Ministry of Social Development</span>
+                </td>
+                <td class="col4 cell">
+                  <a href="#" class="url org">State Services Commission, New Zealand</a>
+                </td>
+                <td class="col5 cell">
+                  unknown<br />12/12/2001
+                </td>
+                <td class="col6 cell">
+                  <span class="adr"><span class="locality">Wellington</span><br /><span class="country-name">New Zealand</span></span>
+                </td>
+                <td class="col7 cell">$500,000</td>
+                <td class="col8 cell"><a href="#">2</a></td>
+                <td class="col9 cell">10</td>
+                <td class="col10 cell"><a href="#" class="url">view</a></td>
+              </tr>
+
+              <!-- NEXT ROW xxxxxxxxxxxx -->
+              <tr class="row red vcard">
+                <td class="col1 cell"><input type="checkbox" name="check-3" id="check-3" /><label for="check-3" class="hidden">check</label></td>
+                <td class="col2 cell">
+                  <a href="#" class="url fn">Smith, Jane</a>
+                  <p>OFF LIMITS</p>
+                </td>
+                <td class="col3 cell">
+                  <span class="role">Director Human Resources</span>
+                </td>
+                <td class="col4 cell">
+                  <a href="#" class="url org">ABC Company</a>
+                </td>
+                <td class="col5 cell">
+                  01/01/2001<br />12/12/2001
+                </td>
+                <td class="col6 cell">
+                  <span class="adr">
+                    <span class="locality">Pittsburgh</span>,
+                    <span class="region">PA</span> <br />
+                    <span class="country-name">United States</span>
+                  </span>
+                </td>
+                <td class="col7 cell">$500,000</td>
+                <td class="col8 cell"><a href="#">51</a></td>
+                <td class="col9 cell">3</td>
+                <td class="col10 cell"><a href="#" class="url">view</a></td>
+              </tr>
+
+
+              <!-- NEXT ROW xxxxxxxxxxxx -->
+              <tr class="row vcard">
+                <td class="col1 cell"><input type="checkbox" name="check-4" id="check-4" /><label for="check-4" class="hidden">check</label></td>
+                <td class="col2 cell">
+                  <a href="#" class="url fn">Smith, John</a>
+                  <p>RESERVED</p>
+                </td>
+                <td class="col3 cell">
+                  <span class="role">Lorem Ipsum</span>
+                </td>
+                <td class="col4 cell">
+                  <a href="#" class="url org">Lorem Ipsum</a>
+                </td>
+                <td class="col5 cell">
+                  01/01/2001<br />12/12/2001
+                </td>
+                <td class="col6 cell">
+                  <span class="adr">
+                    <span class="locality">City</span>,
+                    <span class="region">St</span> <br />
+                    <span class="country-name">United States</span>
+                  </span>
+                </td>
+                <td class="col7 cell">$500,000</td>
+                <td class="col8 cell"><a href="#">51</a></td>
+                <td class="col9 cell"></td>
+                <td class="col10 cell"></td>
+              </tr>
+
+
+            </tbody>
+
+            <!--
+
+
+              row markup, add .red class if needed
+              microformats docs: http://microformats.org/wiki/hcard
+
+              <tr class="row vcard">
+                <td class="col1 cell"><input type="checkbox" name="check-" id="check-" /><label for="check-" class="hidden">check</label></td>
+                <td class="col2 cell">
+                  <a href="#" class="url fn"></a>
+                </td>
+                <td class="col3 cell">
+                  <span class="role"></span>
+                </td>
+                <td class="col4 cell">
+                  <a href="#" class="url org"></a>
+                </td>
+                <td class="col5 cell"></td>
+                <td class="col6 cell">
+                  <span class="adr">
+                    <span class="locality">City</span>,
+                    <span class="region">St</span>
+                    <span class="country-name">United States</span>
+                  </span>
+                </td>
+                <td class="col7 cell"></td>
+                <td class="col8 cell"></td>
+                <td class="col9 cell"></td>
+                <td class="col10 cell"></td>
+              </tr>
+
+
+
+            -->
+
+        </table>
+        </div> <!-- end table border -->
+        <a href="#" class="bottom-button">add candidates</a>
+        <div class="pagination">
+          <a href="#" class="prev" title="prev">prev</a>
+          <ul>
+            <li class="current"><a href="#">1-25</a></li>
+            <li><a href="#">26-50</a></li>
+            <li><a href="#">51-75</a></li>
+            <li><a href="#">75-100</a></li>
+            <li>...</li>
+            <li><a href="#">101-125</a></li>
+          </ul>
+          <a href="#" class="next" title="next">next</a>
+        </div>
+
+      </div><!-- SEARCH RESULTS end -->
+    </div> <!-- end #content -->
+  </div> <!-- end #page -->
+</body>
+</html>
