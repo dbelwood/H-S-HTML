@@ -64,6 +64,7 @@ ul {
 	overflow-y: scroll;
 	margin-bottom: 10px;
 	padding-right: 32px;
+	line-height: 1.2em;
 }
 
 li.header {
@@ -75,7 +76,7 @@ li.header a {
 }
 
 li.detail {
-	
+	margin-top: 10px;
 }
 
 .detailOff {
