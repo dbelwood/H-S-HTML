@@ -30,7 +30,6 @@ div.message strong {
 }
 
 .content {
-	margin-right: 32px;
 	overflow: hidden;
 	padding-left: 5px;
 }
@@ -54,7 +53,7 @@ div.message strong {
 	width: 103px;
 }
 
-div.detail {
+div.details {
 	border-bottom: 5px solid #AEB15C;
 	padding-top: 23px;	
 }
@@ -64,6 +63,7 @@ ul {
 	height: 200px;
 	overflow-y: scroll;
 	margin-bottom: 10px;
+	padding-right: 32px;
 }
 
 li.header {
