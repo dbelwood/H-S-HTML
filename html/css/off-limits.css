@@ -1,0 +1,96 @@
+.message {
+	background-color: #ffc;
+	border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+	moz-border-radius: 4px;
+	overflow: hidden;
+	-webkit-border-radius: 4px;
+}
+
+.error {
+	border-color: #c00;
+}
+
+div.message strong {
+	font-weight: bold;
+}
+
+.msgIcon {
+	background-position: 0px 0px;
+	float: left;
+	height: 32px;
+	margin: 8px 8px 6px 6px;
+	width: 32px;
+}
+
+.error .msgIcon {
+	background-image: url(../img/stop.png);
+}
+
+.content {
+	margin-right: 32px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+
+.expanded {
+	height: 200px;
+	overflow-y: scroll;	
+}
+
+.summary {
+	border-top: 5px solid #AEB15C;
+	margin-bottom: 10px;
+}
+
+.detailOn {
+	background-image: url(../img/detailsOn.png);
+	cursor: pointer;
+	height: 23px;
+	margin: 0 auto;
+	text-align: center;
+	width: 103px;
+}
+
+div.detail {
+	border-bottom: 5px solid #AEB15C;
+	padding-top: 23px;	
+}
+
+ul {
+	list-style-type: none;
+	height: 200px;
+	overflow-y: scroll;
+	margin-bottom: 10px;
+}
+
+li.header {
+	margin-top: 15px;
+}
+
+li.header a {
+	margin-left: 15px;
+}
+
+li.detail {
+	
+}
+
+.detailOff {
+	background-image: url(../img/detailsOff.png);
+	cursor: pointer;
+	height: 23px;
+	margin: 0 auto;
+	text-align: center;
+	width: 103px;
+}
+
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
